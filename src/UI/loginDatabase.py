@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'loginDatabase.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_loginDatabase(object):
+    def setupUi(self, loginDatabase):
+        loginDatabase.setObjectName("loginDatabase")
+        loginDatabase.resize(420, 321)
+        loginDatabase.setStyleSheet("#loginDatabase{border-image:url(./1.jpg);}")
+        self.label = QtWidgets.QLabel(loginDatabase)
+        self.label.setGeometry(QtCore.QRect(20, 86, 150, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.ipaddr = QtWidgets.QLineEdit(loginDatabase)
+        self.ipaddr.setGeometry(QtCore.QRect(177, 86, 221, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.ipaddr.setFont(font)
+        self.ipaddr.setText("")
+        self.ipaddr.setObjectName("ipaddr")
+        self.label_2 = QtWidgets.QLabel(loginDatabase)
+        self.label_2.setGeometry(QtCore.QRect(20, 128, 150, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.LoginBtn = QtWidgets.QPushButton(loginDatabase)
+        self.LoginBtn.setGeometry(QtCore.QRect(177, 254, 221, 29))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.LoginBtn.setFont(font)
+        self.LoginBtn.setAutoFillBackground(True)
+        self.LoginBtn.setObjectName("LoginBtn")
+        self.database = QtWidgets.QLineEdit(loginDatabase)
+        self.database.setGeometry(QtCore.QRect(177, 128, 221, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.database.setFont(font)
+        self.database.setObjectName("database")
+        self.username = QtWidgets.QLineEdit(loginDatabase)
+        self.username.setGeometry(QtCore.QRect(177, 170, 221, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.username.setFont(font)
+        self.username.setObjectName("username")
+        self.password = QtWidgets.QLineEdit(loginDatabase)
+        self.password.setGeometry(QtCore.QRect(177, 212, 221, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.password.setFont(font)
+        self.password.setObjectName("password")
+        self.label_4 = QtWidgets.QLabel(loginDatabase)
+        self.label_4.setGeometry(QtCore.QRect(20, 212, 150, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_3 = QtWidgets.QLabel(loginDatabase)
+        self.label_3.setGeometry(QtCore.QRect(20, 170, 150, 27))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_5 = QtWidgets.QLabel(loginDatabase)
+        self.label_5.setGeometry(QtCore.QRect(150, 30, 121, 31))
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiCondensed")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+
+        self.retranslateUi(loginDatabase)
+        QtCore.QMetaObject.connectSlotsByName(loginDatabase)
+
+    def retranslateUi(self, loginDatabase):
+        _translate = QtCore.QCoreApplication.translate
+        loginDatabase.setWindowTitle(_translate("loginDatabase", "Dialog"))
+        self.label.setText(_translate("loginDatabase", "Server Address:"))
+        self.label_2.setText(_translate("loginDatabase", "Database Name:"))
+        self.LoginBtn.setText(_translate("loginDatabase", "Login"))
+        self.label_4.setText(_translate("loginDatabase", "Password："))
+        self.label_3.setText(_translate("loginDatabase", "Username："))
+        self.label_5.setText(_translate("loginDatabase", "数据库登录"))

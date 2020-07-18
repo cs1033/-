@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'table.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_TablePage(object):
+    def setupUi(self, TablePage):
+        TablePage.setObjectName("TablePage")
+        TablePage.resize(817, 386)
+        TablePage.setStyleSheet("#TablePage{border-image:url(./1.jpg);}")
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(TablePage.sizePolicy().hasHeightForWidth())
+        TablePage.setSizePolicy(sizePolicy)
+        TablePage.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.centralwidget = QtWidgets.QWidget(TablePage)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
+        self.centralwidget.setSizePolicy(sizePolicy)
+        self.centralwidget.setObjectName("centralwidget")
+        self.welcome = QtWidgets.QLabel(self.centralwidget)
+        self.welcome.setGeometry(QtCore.QRect(10, 60, 801, 41))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        font.setKerning(True)
+        font.setStyleStrategy(QtGui.QFont.NoAntialias)
+        self.welcome.setFont(font)
+        self.welcome.setAlignment(QtCore.Qt.AlignCenter)
+        self.welcome.setObjectName("welcome")
+        self.clientManage = QtWidgets.QPushButton(self.centralwidget)
+        self.clientManage.setGeometry(QtCore.QRect(70, 230, 121, 31))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.clientManage.setFont(font)
+        self.clientManage.setObjectName("clientManage")
+        self.accountManage = QtWidgets.QPushButton(self.centralwidget)
+        self.accountManage.setGeometry(QtCore.QRect(270, 230, 121, 31))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.accountManage.setFont(font)
+        self.accountManage.setObjectName("accountManage")
+        self.loanManage = QtWidgets.QPushButton(self.centralwidget)
+        self.loanManage.setGeometry(QtCore.QRect(450, 230, 121, 31))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.loanManage.setFont(font)
+        self.loanManage.setObjectName("loanManage")
+        self.business = QtWidgets.QPushButton(self.centralwidget)
+        self.business.setGeometry(QtCore.QRect(640, 230, 121, 31))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.business.setFont(font)
+        self.business.setObjectName("business")
+        TablePage.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(TablePage)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 817, 26))
+        self.menubar.setObjectName("menubar")
+        self.Connect = QtWidgets.QMenu(self.menubar)
+        self.Connect.setObjectName("Connect")
+        TablePage.setMenuBar(self.menubar)
+        self.actionLogin = QtWidgets.QAction(TablePage)
+        self.actionLogin.setObjectName("actionLogin")
+        self.actionLogout = QtWidgets.QAction(TablePage)
+        self.actionLogout.setObjectName("actionLogout")
+        self.Connect.addAction(self.actionLogin)
+        self.Connect.addAction(self.actionLogout)
+        self.menubar.addAction(self.Connect.menuAction())
+
+        self.retranslateUi(TablePage)
+        QtCore.QMetaObject.connectSlotsByName(TablePage)
+
+    def retranslateUi(self, TablePage):
+        _translate = QtCore.QCoreApplication.translate
+        TablePage.setWindowTitle(_translate("TablePage", "DataBase ShowTable"))
+        self.welcome.setText(_translate("TablePage", "xx支行-xx部门-xx员工"))
+        self.clientManage.setText(_translate("TablePage", "客户管理"))
+        self.accountManage.setText(_translate("TablePage", "账户管理"))
+        self.loanManage.setText(_translate("TablePage", "贷款管理"))
+        self.business.setText(_translate("TablePage", "业务统计"))
+        self.Connect.setTitle(_translate("TablePage", "连接"))
+        self.actionLogin.setText(_translate("TablePage", "Login"))
+        self.actionLogout.setText(_translate("TablePage", "Logout"))
