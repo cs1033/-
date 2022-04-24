@@ -336,28 +336,7 @@ alter table staff
 
 alter table staff add password char(30) not NULL;
 
-insert into sub_branch 
-value
-('USTC建设银行', 1000000.10,'合肥'),
-('江西省吉安市建设银行', 1000000.10,'吉安');
 
-INSERT INTO department 
-value
-('001', 'USTC建设银行', '业务部', 1, '362421199911232012'),
-('011', '江西省吉安市建设银行', '业务部', 1, '362421199911232013');
-
-INSERT INTO staff 
-value
-('362421199911232012','001','362421199911232012','cs1033','17755554433','USTC','2019-02-08','1033');
-INSERT INTO staff 
-value
-('1','001','362421199911232012','刘同学','17755554433','USTC','2019-02-08','1033');
-INSERT INTO staff 
-value
-('362421199911232013','011','362421199911232013','LGC','17755554433','USTC','2019-02-08','1033');
-INSERT INTO staff 
-value
-('2','011','362421199911232013','刘高聪','17755554433','USTC','2019-02-08','1033');
 
 ALTER TABLE pay ADD pay_date date;
 ALTER TABLE loans ADD loan_date date;
